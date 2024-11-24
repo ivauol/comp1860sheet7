@@ -22,7 +22,7 @@ CHIP DecoderSegment201823321 {
     And(a=notAandnotB, b=notD, out=expFour);
 
     And(a=B, b=C, out=BandC);
-    And(a=BandC, b=D, out=expFive);
+    And(a=BandC, b=notD, out=expFive);
 
     Or(a=expOne, b=expTwo, out=orOne);
     Or(a=orOne, b=expThree, out=orTwo);
